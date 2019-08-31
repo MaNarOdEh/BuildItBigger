@@ -13,7 +13,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivityFragment extends Fragment {
-    @BindView(R.id.txt_instr) @Nullable() TextView mTextView;
     @BindView(R.id.indic_prog) @Nullable() ProgressBar indicator_progressbar;
     public MainActivityFragment() {
     }
