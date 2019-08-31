@@ -103,6 +103,7 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onAdClosed() {
                 // Code to be executed when the interstitial ad is closed.
+                initializeAds();
             }
         });
 
