@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 
@@ -61,10 +60,5 @@ public class MainActivity extends AppCompatActivity {
         }.execute();
 
     }
-    //builditbigger-251420
-    //AIzaSyAs3cavzhiL14NRN691Es-f2ip5HPaQmSo APIKEY
 
 }
-//appengine.tools.cloudSdkHome="C:\\Users\\pc corner\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk"
-
-

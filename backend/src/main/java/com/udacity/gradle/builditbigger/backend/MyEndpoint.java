@@ -31,7 +31,6 @@ public class MyEndpoint {
     public MyBean getJoke() {
         MyBean myBean = new MyBean();
         myBean.setData(new MyClass().getJoke());
-        System.out.println("HELLOITMEMANAR "+myBean+"    "+new MyClass().getJoke());
         return myBean;
     }
 

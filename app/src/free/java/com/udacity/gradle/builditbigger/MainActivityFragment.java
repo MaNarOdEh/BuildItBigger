@@ -67,7 +67,7 @@ public class MainActivityFragment extends Fragment {
                     mInterstitialAd.loadAd(new AdRequest.Builder().build());
                 } else {
                     initializeAds();
-                    Log.d("TAG", "The interstitial wasn't loaded yet.");
+                   // Log.d("TAG", "The interstitial wasn't loaded yet.");
                 }
                 tellJoke();
             }

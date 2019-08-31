@@ -1,3 +1,26 @@
-Error occurred during initialization of VM
-Error opening zip file or JAR manifest missing : C:\Users\pc corner\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\lib\agent\appengine-agent.jar
-agent library failed to init: instrument
+Sep 01, 2019 1:28:57 AM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+INFO: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\pc corner\AppData\Local\Google\Cloud SDK\google-cloud-sdk\platform\google_appengine\google\appengine\tools\java\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'G:\FinalProject-master\FinalProject-master\backend\build\exploded-backend\WEB-INF\appengine-web.xml'
+2019-09-01 01:28:57.845:INFO::main: Logging initialized @533ms to org.eclipse.jetty.util.log.StdErrLog
+2019-09-01 01:28:57.892:WARN:oejs.AbstractConnector:main: Ignoring deprecated socket close linger time
+Aug 31, 2019 10:28:58 PM com.google.appengine.tools.development.IsolatedAppClassLoader checkWorkingDirectory
+WARNING: Your working directory, (G:\FinalProject-master\FinalProject-master\backend) is not equal to your 
+web application root (G:\FinalProject-master\FinalProject-master\backend\build\exploded-backend)
+You will not be able to access files from your working directory on the production server.
+
+2019-09-01 01:28:58.177:INFO:oejs.Server:main: jetty-9.4.18.v20190429; built: 2019-04-29T20:42:08.989Z; git: e1bc35120a6617ee3df052294e433f3a25ce7097; jvm 1.8.0_202-release-1483-b03
+2019-09-01 01:28:58.770:INFO:oejsh.ContextHandler:main: Started c.g.a.t.d.j.DevAppEngineWebAppContext@305ffe9e{/,file:///G:/FinalProject-master/FinalProject-master/backend/build/exploded-backend/,AVAILABLE}{G:\FinalProject-master\FinalProject-master\backend\build\exploded-backend}
+2019-09-01 01:28:58.771:INFO:oejs.session:main: DefaultSessionIdManager workerName=node0
+2019-09-01 01:28:58.771:INFO:oejs.session:main: node0 Scavenging disabled
+2019-09-01 01:28:58.784:INFO:oejs.AbstractConnector:main: Started NetworkTrafficSelectChannelConnector@3108bc{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-09-01 01:28:58.785:INFO:oejs.Server:main: Started @1472ms
+Aug 31, 2019 10:28:58 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: Module instance default is running at http://localhost:8080/
+Aug 31, 2019 10:28:58 PM com.google.appengine.tools.development.AbstractModule startup
+INFO: The admin console is running at http://localhost:8080/_ah/admin
+Sep 01, 2019 1:28:58 AM com.google.appengine.tools.development.DevAppServerImpl doStart
+INFO: Dev App Server is now running
+2019-09-01 01:49:57.294:INFO:oejs.AbstractConnector:pool-1-thread-1: Stopped NetworkTrafficSelectChannelConnector@3108bc{HTTP/1.1,[http/1.1]}{localhost:8080}
+2019-09-01 01:49:57.300:INFO:oejsh.ContextHandler:pool-1-thread-1: Stopped c.g.a.t.d.j.DevAppEngineWebAppContext@305ffe9e{/,file:///G:/FinalProject-master/FinalProject-master/backend/build/exploded-backend/,UNAVAILABLE}{G:\FinalProject-master\FinalProject-master\backend\build\exploded-backend}
+Sep 01, 2019 1:49:57 AM com.google.appengine.tools.development.AbstractModule shutdown
+INFO: Shutting down module instance default
+Shutting down.
