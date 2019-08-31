@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -32,6 +33,8 @@ public class MainActivityFragment extends Fragment {
     @BindView(R.id.indicator_progressbar)
     @Nullable()
     ProgressBar indicator_progressbar;
+    @BindView(R.id.btn_give_joke)@Nullable()
+    Button mJokeBtn;
 
     public MainActivityFragment() {
     }
@@ -42,7 +45,14 @@ public class MainActivityFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_main_activity, container, false);
         ButterKnife.bind(this, root);
         ButterKnife.setDebug(true);
-        initializeAds();
+        mJokeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                indicator_progressbar.setVisibility(View.VISIBLE);
+                ((MainActivity)getActivity()).tellJoke();
+                initializeAds();
+            }
+        });
 
 
         return root;

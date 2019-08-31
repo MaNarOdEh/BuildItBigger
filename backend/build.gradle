@@ -34,4 +34,4 @@ dependencies {
     implementation project(path: ':JokeProvide')
 }
 appengine.tools.cloudSdkHome="C:\\Users\\pc corner\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk"
-appengine.run.port = 3333
+appengine.run.port = 8080

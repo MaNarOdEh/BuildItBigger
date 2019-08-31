@@ -33,7 +33,6 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="@string/button_text"
-            android:onClick="tellJoke"
             android:background="@android:color/holo_blue_bright"
             android:textColor="@android:color/white"
             android:textAllCaps="false"/>

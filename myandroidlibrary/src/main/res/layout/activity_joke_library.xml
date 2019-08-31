@@ -7,7 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".JokeLibraryActivity"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/fuunyface"
+        android:layout_margin="15dp"/>
     <TextView
         android:id="@+id/txt_joke"
         android:layout_width="match_parent"

@@ -94,7 +94,6 @@
           function(response) {
             var outputAlertDiv = document.getElementById('outputAlert');
             outputAlertDiv.style.visibility = 'visible';
-
             if (!response.error) {
               outputAlertDiv.className = 'alert alert-success';
               outputAlertDiv.innerHTML = '<h2>' + response.result.data + '</h2>';
@@ -124,7 +123,6 @@
       }
       gapi.client.load(apiName, apiVersion, callback, apiRoot);
     }
-
 </script>
 <!--
  Load the Google APIs Client Library for JavaScript

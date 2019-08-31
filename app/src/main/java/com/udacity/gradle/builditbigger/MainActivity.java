@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view ) {
+    public void tellJoke( ) {
         new GetJokeTask(this){
             @Override
             protected void onPostExecute(String s) {

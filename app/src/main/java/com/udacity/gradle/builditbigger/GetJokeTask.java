@@ -12,18 +12,18 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 
 import java.io.IOException;
 
-public class GetJokeTask extends AsyncTask<Pair<Context,String>,Void,String> {
+public class GetJokeTask extends AsyncTask<Context,Void,String> {
     private Context mcontext;
     private MyApi myApi;
     public GetJokeTask(Context context){
         this.mcontext=context;
     }
     @Override
-    protected String doInBackground(Pair<Context, String>... pairs) {
+    protected String doInBackground(Context... pairs) {
         if(myApi==null){
             MyApi.Builder builder=new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(),null)
-                    .setRootUrl("http://192.168.1.113:8080//_ah/api/")
+                    .setRootUrl(" http://192.168.1.113:8080//_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> request) throws IOException {
@@ -41,3 +41,6 @@ public class GetJokeTask extends AsyncTask<Pair<Context,String>,Void,String> {
         }
     }
 }
+
+/*appengine.tools.cloudSdkHome="C:\\Users\\pc corner\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk"
+appengine.run.port = 8080*/
